@@ -24,6 +24,8 @@ def graphRawFx():
     for label in ax1.xaxis.get_ticklabels():
         label.set_rotation(45)
 
+    
+
     plt.gca().get_yaxis().get_major_formatter().set_useOffset(False)
 
 
