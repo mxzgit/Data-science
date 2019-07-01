@@ -31,9 +31,9 @@ def create_new_data(data,feature_matrix_):
 
 if __name__ == "__main__":
     matrix = [
-        [8,-5,12],
-        [0.5,52,0.9],
-        [2,-45,68]
+        [3,5,-1],
+        [4,-3,-4],
+        [12,9,2]
         ]
     
     normed_matrix = mean_normalization(matrix)
@@ -49,5 +49,5 @@ if __name__ == "__main__":
     feature_matrix_ = feature_matrix(eigenvectors,dim=2)
     print('Feature matrix :\n {} \n'.format(feature_matrix_))
 
-    new_data = create_new_data(matrix,feature_matrix_)
+    new_data = create_new_data(normed_matrix,feature_matrix_)
     print('new data matrix :\n {} \n'.format(new_data))
